@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/CouleurFond"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <Button
+            android:id="@+id/btnMail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="14dp"
+            android:text="nico.masson.66@gmail.com" />
+
+        <TextView
+            android:id="@+id/txtWeb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnMail"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="14dp"
+            android:text="Web"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/btnWeb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtWeb"
+            android:layout_alignBottom="@+id/txtWeb"
+            android:layout_alignLeft="@+id/btnMail"
+            android:text="nicolas-masson.fr" />
+
+        <TextView
+            android:id="@+id/txtMail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btnMail"
+            android:layout_alignBottom="@+id/btnMail"
+            android:layout_alignRight="@+id/txtWeb"
+            android:text="Mail"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnWeb"
+            android:layout_alignParentLeft="true"
+            android:text="Apropos de l&apos;auteur :"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtMail"
+            android:layout_alignParentTop="true"
+            android:text="Apropos de l&apos;application :"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="14dp"
+            android:text="Cette application sert à calculer les interets d&apos;un crédit à faux fixe annuel (typiquement crédit immobilier) biensur, elle ne prends pas en compte les remboursements anticipés. Ni les éventuelles révisions de mensualitées."
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="14dp"
+            android:text="Vous pouvez choisir de ne pas remplir un champs de votre choix et le programme calculera la meilleur valeure pour ce champs non renseigné en fonction des autres valeurs que vous avez renseigné."
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+</ScrollView>

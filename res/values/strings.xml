@@ -1,0 +1,25 @@
+<resources>
+
+    <string name="app_name">Calcul de prêt immobilier</string>
+    <string name="menu_settings">A Propos</string>
+    <string name="title_activity_main">Calcul de prêt immobilier</string>
+    <string name="lblEuros">€</string>
+    <string name="lblPourcent">%</string>
+    <string name="btnCalcul">Calcul</string>
+    <string name="btnClear">Clear</string>
+    <string name="txtMensualite">Mensualités :</string>
+    <string name="txtPourcentage">Taux annuel :</string>
+    <string name="txtMontant">Montant :</string>
+    <string name="lblMensualite">Mois</string>
+    <string name="txtDuree">Durée :</string>
+    <string name="lblDuree">Années</string>
+    <string name="apropos">Application de calcul de cout de crédit immobilier</string>
+    <string name="defaultTxtView">TextView</string>
+
+    <color name="CouleurFond">#DDDDDD</color>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_principal">Principal</string>
+    <string name="Recapitulatif">Recapitulatif</string>
+
+</resources>

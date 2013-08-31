@@ -1,0 +1,207 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/CouleurFond" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/txtMontant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="100dp"
+        android:ems="9"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/lblEuros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtMontant"
+        android:layout_alignBottom="@+id/txtMontant"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="3dp"
+        android:text="@string/lblEuros"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/txtPourcentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtMontant"
+        android:layout_below="@+id/txtMontant"
+        android:layout_marginLeft="90dp"
+        android:ems="5"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/lblPourcent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtPourcentage"
+        android:layout_alignBottom="@+id/txtPourcentage"
+        android:layout_alignParentRight="true"
+        android:text="@string/lblPourcent"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/lblMontant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtMontant"
+        android:layout_alignBottom="@+id/txtMontant"
+        android:layout_toLeftOf="@+id/txtPourcentage"
+        android:text="@string/txtMontant"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/lblPourcentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtPourcentage"
+        android:layout_alignBottom="@+id/txtPourcentage"
+        android:layout_alignParentLeft="true"
+        android:text="@string/txtPourcentage"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/txtMensualite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtPourcentage"
+        android:layout_marginLeft="190dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/lblEuros2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtMensualite"
+        android:layout_alignBottom="@+id/txtMensualite"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="3dp"
+        android:text="@string/lblEuros"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/lblMensualite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtMensualite"
+        android:layout_alignBottom="@+id/txtMensualite"
+        android:layout_alignLeft="@+id/lblMontant"
+        android:text="@string/txtMensualite"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/txtDuree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtMensualite"
+        android:layout_below="@+id/txtMensualite"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="0dp"
+        android:ems="15"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/lblDuree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtDuree"
+        android:layout_alignBottom="@+id/txtDuree"
+        android:layout_alignLeft="@+id/lblMensualite"
+        android:text="@string/txtDuree"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/lblAnnee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtDuree"
+        android:layout_alignBottom="@+id/txtDuree"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="3dp"
+        android:text="@string/lblDuree"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/btnCalcul"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lblDuree"
+        android:layout_below="@+id/txtDuree"
+        android:layout_marginTop="0dp"
+        android:layout_toLeftOf="@+id/txtDuree"
+        android:text="@string/btnCalcul" />
+
+    <TextView
+        android:id="@+id/lblSummary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnCalcul"
+        android:layout_below="@+id/btnCalcul" />
+
+    <TextView
+        android:id="@+id/lblSummary2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lblSummary"
+        android:layout_alignBottom="@+id/lblSummary"
+        android:layout_alignLeft="@+id/lblSummary" />
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnCalcul"
+        android:layout_alignBottom="@+id/btnCalcul"
+        android:layout_alignLeft="@+id/txtDuree"
+        android:layout_alignRight="@+id/lblAnnee"
+        android:text="@string/btnClear" />
+
+    <TextView
+        android:id="@+id/lblSummary3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/lblSummary2"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/lblSummary5"
+        android:clickable="true"
+        android:onClick="onClick" />
+
+    <TextView
+        android:id="@+id/lblSummary4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/lblSummary2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_below="@id/lblSummary2" />
+
+    <TextView
+        android:id="@+id/lblSummary5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/lblSummary4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_below="@id/lblSummary4" />
+
+</RelativeLayout>
